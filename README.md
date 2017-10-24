@@ -6,18 +6,18 @@ A repo for learn@work knowledge
 ### REDUX: a predictable state container for JavaScript apps.
 
 What are the benefits of Redux?
-+Provides an easier way to share data between components
-+Provides an enhanced dev experience through Hot Module Replacement and Redux Dev Tools
-+Makes testing easier, mostly because it facilitates the use of pure functional React components.
-+Helps manage state in your application 
-+View the entire state of your application at once since it’s all in a single state store / tree
+*Provides an easier way to share data between components
+*Provides an enhanced dev experience through Hot Module Replacement and Redux Dev Tools
+*Makes testing easier, mostly because it facilitates the use of pure functional React components.
+*Helps manage state in your application 
+*View the entire state of your application at once since it’s all in a single state store / tree
 
 ### FIREBASE: A real-time, cloud-hosted database. Data is stored as JSON and synchronized in real-time to every connected client.
 
 #### Two Rules for Schema
 
-+Keep your data shallow (firebase can only query one node at a time)
-+Don’t be afraid of duplicating data (to create faster reads)
+*Keep your data shallow (firebase can only query one node at a time)
+*Don’t be afraid of duplicating data (to create faster reads)
 
 Imagine the following data =>
 ```
