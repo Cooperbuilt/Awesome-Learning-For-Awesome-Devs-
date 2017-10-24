@@ -15,6 +15,7 @@ What are the benefits of Redux?
 ### FIREBASE: A real-time, cloud-hosted database. Data is stored as JSON and synchronized in real-time to every connected client.
 
 #### Two Rules for Schema
+
 +Keep your data shallow (firebase can only query one node at a time)
 +Don’t be afraid of duplicating data (to create faster reads)
 
