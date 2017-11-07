@@ -1,7 +1,49 @@
 # Awesome-Learning-For-Awesome-Devs-
 A repo for learn@work knowledge
 
-## Day 1 (October 24, 2017)
+## Day 3 (November 6. 2017)
+Wes Bos - Learn Redux Course
+### App Layout + Component Setup
+* Setup Main, PhotoGrid, and Single components that will be used for the Reduxstagram app.
+
+### Setting up React Router
+* Imported react-router and imported all components into reduxstagram.js file.
+* Setup basic router configuration using Router, Route, IndexRouter, and browserHistory from react-router.
+```
+import React from 'react';
+
+import { render } from 'react-dom';
+
+// Import css
+import css from './styles/style.styl';
+
+// Import Components
+import Main from './components/Main';
+import Single from './components/Single';
+import PhotoGrid from './components/PhotoGrid';
+
+// import react router deps
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+
+const router = (
+  <Router history={browserHistory}>
+    <Route path="/" component={Main}>
+      <IndexRoute component={PhotoGrid}></IndexRoute>
+      <Route path="/view/:postId" component={Single}></Route>
+    </Route>
+  </Router>
+)
+
+render(router, document.getElementById('root'));
+```
+
+## Day 2 (October 30, 2017)
+Decided as a team to switch from Tyler McGinnis to Wes Bos, Learn Redux course, https://learnredux.com/
+
+### Wes Bos: Learn Redux
+* We cloned the start files and setup the basic webpack environment.
+
+## Day 1 (October 23, 2017)
 
 ### REDUX: a predictable state container for JavaScript apps.
 
