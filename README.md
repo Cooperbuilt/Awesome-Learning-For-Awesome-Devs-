@@ -1,6 +1,24 @@
 # Awesome-Learning-For-Awesome-Devs-
 A repo for learn@work knowledge
 
+## Day 4 (November 13, 2017)
+Wes Bos - Learn Redux Course
+
+### Testing Suite
+Start by running the following commands in your dev environment. We will use these modules in the coming days to start testing our react components. 
+
+npm install --save-dev jasmine-enzyme@2.1.2
+
+npm install --save-dev enzyme@2.7.1
+
+npm install --save-dev jasmine@2.4.1
+
+As we move forward, please familiarize yourself with the following docs. 
+https://github.com/airbnb/enzyme/tree/v2.7.1/docs
+https://jasmine.github.io/2.4/introduction
+
+
+
 ## Day 3 (November 6. 2017)
 Wes Bos - Learn Redux Course
 ### App Layout + Component Setup
