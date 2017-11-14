@@ -18,6 +18,36 @@ https://github.com/airbnb/enzyme/tree/v2.7.1/docs
 
 https://jasmine.github.io/2.4/introduction
 
+### Actions and action creators
+Actions are payloads of information that send data from your application to your store. They are the only source of information for the store.
+```
+{
+    type: "ADD_COMMENT",
+    postId,
+    author,
+    comment
+}
+```
+Actions are plain JavaScript objects. Actions must have a type property that indicates the type of action being performed.
+
+Action creators are functions which purpose is to create and return an action with a type and a payload.
+```
+function addComment(postId, author, comment) {
+  return {
+    type: "ADD_COMMENT",
+    postId,
+    author,
+    comment
+  };
+}
+```
+Other than type, the structure of an action object is really up to you.
+
+Read more:
+https://redux.js.org/docs/basics/Actions.html
+
+#### Next Step: Defining reducers
+We will be learning how to set up reducers to specify how the state updates when you dispatch actions.  If you want to get a head start you can read the docs on Reducers here: https://redux.js.org/docs/basics/Reducers.html
 
 
 ## Day 3 (November 6. 2017)
