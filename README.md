@@ -1,6 +1,16 @@
 # Awesome-Learning-For-Awesome-Devs-
 A repo for learn@work knowledge
 
+## Day 4 (November 20, 2017)
+Wes Bbos - Learn Redux Course
+
+### Quick Tip of the Day
+To test your actions and reducers from the console - 
+1) select your component in React Dev Tools
+2) In your console, select component with $r
+3) To see your store, type `$r.store`
+4) To dispatch your action, type `$r.store.dispatch({type: 'ACTION_NAME', param1: blah etc. etc.})
+
 ## Day 4 (November 13, 2017)
 Wes Bos - Learn Redux Course
 
