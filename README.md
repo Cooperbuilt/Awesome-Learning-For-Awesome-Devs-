@@ -1,15 +1,48 @@
 # Awesome-Learning-For-Awesome-Devs-
 A repo for learn@work knowledge
 
-## Day 4 (November 20, 2017)
-Wes Bbos - Learn Redux Course
+## Day 5 (November 20, 2017)
+Wes bos - Learn Redux Course: Video progress through video 11.
 
 ### Quick Tip of the Day
 To test your actions and reducers from the console - 
 1) select your component in React Dev Tools
 2) In your console, select component with $r
 3) To see your store, type `$r.store`
-4) To dispatch your action, type `$r.store.dispatch({type: 'ACTION_NAME', param1: blah etc. etc.})
+4) To dispatch your action, type `$r.store.dispatch({type: 'ACTION_NAME', param1: blah etc. etc.})`
+
+### Reducers, Root Reducers, and the Global Store
+A reducer (a name derived from the JavaScript reduce method) takes two parameters: An action, and a next state.
+
+The reducer has access to the current (soon to be previous) state, applies the given action to that state, and returns the desired next state.
+
+Reducers are designed to be pure functions; meaning, they produce no side effects. If you pass the same input values to a reducer 100 times, you will get the exact same output value 100 times. Nothing weird happens. They are completely predictable.
+
+Reducers do not store state, and they do NOT mutate state. They are passed state, and they return state. This is what reducers look like in action...
+
+The Action Creator - 
+```
+const toggleModal = (shouldShow) => {
+    return {
+      type: 'TOGGLE_MODAL',
+      payload: {
+        shouldShow
+      }
+    }
+  }
+```
+Let's break this down. The action itself is a named arrow function that returns an object. The function that creates the object is called the Action Creator. The object itself is the action. With this particular action, our type is 'TOGGLE_MODAL' and our payload is a boolean. 
+
+The Reducer - 
+```
+case 'TOGGLE_MODAL':
+        return { ...state, showModal: action.payload.shouldShow }
+```
+First things first, this is a snippet of a larger case statement. Each of these cases are reducers. Taken by itself however, we can clearly see the action type and the reducer case statement align. When that case statement is triggered, the reducer returns existing state, along with a new piece of state -> showModal: (whatever our shouldShow boolean is). From here, we just need to use this global state somehow...
+
+### How to Use The Global State
+// TO-DO Add info about connect, mapStateToProps, mapDispatchToProps, using state, etc. 
+
 
 ## Day 4 (November 13, 2017)
 Wes Bos - Learn Redux Course
